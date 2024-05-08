@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Cosplayer</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .username {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .cosplay-name {
+            font-style: italic;
+        }
+        .bio {
+            margin-top: 15px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <img src="imagem-perfil.jpg" alt="Foto de Perfil" class="profile-picture">
+        <h1 class="username">Nome do Cosplayer <span class="cosplay-name">(Personagem Atual)</span></h1>
+        <p class="bio">
+            Breve descrição sobre o cosplayer, seus interesses e séries/jogos favoritos.
+        </p>
+        <h2>Galeria de Cosplays</h2>
+        <div class="gallery">
+            <img src="cosplay1.jpg" alt="Cosplay 1">
+            <img src="cosplay2.jpg" alt="Cosplay 2">
+            <img src="cosplay3.jpg" alt="Cosplay 3">
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COSCON - Login</title>
+</head>
+<body>
+    <h1>Login no COSCON</h1>
+    <form action="{{ url_for('logar') }}" method="post">
+        <label for="nome_usuario">Nome de Usuário:</label>
+        <input type="text" name="nome_usuario" required>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" required>
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+</html>

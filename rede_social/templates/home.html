@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSCON - Feed de Postagens</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h1>COSCON - Feed de Postagens</h1>
+
+    {% for postagem in postagens %}
+        <article class="postagem">
+            <img src="{{ postagem.avatar_url }}" alt="Avatar de {{ postagem.nome_usuario }}"> 
+            <h2>{{ postagem.nome_usuario }}</h2>
+            <p class="data-postagem">{{ postagem.data_postagem }}</p> 
+            <p>{{ postagem.conteudo }}</p>
+            <div class="acoes">
+                <button class="curtir">Curtir</button>
+                <button class="comentar">Comentar</button>
+            </div>
+            <!-- Seção para exibir comentários -->
+            <div class="comentarios">
+                </div> 
+        </article>
+    {% endfor %}
+
+    {% if not postagens %}
+        <p>Nenhuma postagem encontrada.</p>
+    {% endif %}
+
+    <!-- Script para lidar com ações de curtir e comentar (exemplo) -->
+    <script src="script.js"></script>
+</body>
+</html>
