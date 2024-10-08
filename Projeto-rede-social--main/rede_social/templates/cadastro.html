@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COSCON - Cadastro</title>
+</head>
+<body>
+    <h1>Cadastre-se no COSCON</h1>
+    <form action="{{ url_for('cadastrar') }}" method="post">
+        <label for="nome_usuario">Nome de Usuário:</label>
+        <input type="text" name="nome_usuario" required>
+        <!-- Adicione mais campos conforme necessário (ex: email, senha) -->
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COSCON - Bem-vindo!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Bem-vindo ao COSCON!</h1>
+    <p>A rede social para cosplayers.</p>
+    <a href="{{ url_for('cadastro') }}">Cadastre-se</a>
+    <a href="{{ url_for('login') }}">Login</a>
+</body>
+</html>
